@@ -51,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		8310126B1F741F9C002604DF /* LightweightReactive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LightweightReactive.framework; path = Carthage/Build/iOS/LightweightReactive.framework; sourceTree = "<group>"; };
+		831C15C61F74209200B86AD9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83D6150F1F741EB300B56A08 /* LightweightReactiveExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightweightReactiveExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D615121F741EB300B56A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D615141F741EB300B56A08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		83D615061F741EB300B56A08 = {
 			isa = PBXGroup;
 			children = (
+				831C15C61F74209200B86AD9 /* README.md */,
 				8310126B1F741F9C002604DF /* LightweightReactive.framework */,
 				83D615111F741EB300B56A08 /* LightweightReactiveExample */,
 				83D615261F741EB300B56A08 /* LightweightReactiveExampleTests */,
