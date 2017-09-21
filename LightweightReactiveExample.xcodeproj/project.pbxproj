@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8310126C1F741F9D002604DF /* LightweightReactive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8310126B1F741F9C002604DF /* LightweightReactive.framework */; };
+		8310126D1F741F9D002604DF /* LightweightReactive.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8310126B1F741F9C002604DF /* LightweightReactive.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83D615131F741EB300B56A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D615121F741EB300B56A08 /* AppDelegate.swift */; };
 		83D615151F741EB300B56A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D615141F741EB300B56A08 /* ViewController.swift */; };
 		83D615181F741EB300B56A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D615161F741EB300B56A08 /* Main.storyboard */; };
@@ -33,7 +35,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8310126E1F741F9D002604DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8310126D1F741F9D002604DF /* LightweightReactive.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8310126B1F741F9C002604DF /* LightweightReactive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LightweightReactive.framework; path = Carthage/Build/iOS/LightweightReactive.framework; sourceTree = "<group>"; };
 		83D6150F1F741EB300B56A08 /* LightweightReactiveExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightweightReactiveExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D615121F741EB300B56A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D615141F741EB300B56A08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8310126C1F741F9D002604DF /* LightweightReactive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +95,7 @@
 		83D615061F741EB300B56A08 = {
 			isa = PBXGroup;
 			children = (
+				8310126B1F741F9C002604DF /* LightweightReactive.framework */,
 				83D615111F741EB300B56A08 /* LightweightReactiveExample */,
 				83D615261F741EB300B56A08 /* LightweightReactiveExampleTests */,
 				83D615311F741EB300B56A08 /* LightweightReactiveExampleUITests */,
@@ -135,6 +154,7 @@
 				83D6150B1F741EB300B56A08 /* Sources */,
 				83D6150C1F741EB300B56A08 /* Frameworks */,
 				83D6150D1F741EB300B56A08 /* Resources */,
+				8310126E1F741F9D002604DF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -428,6 +448,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = THAWHMKJ4Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LightweightReactiveExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hidemunetakahashi.LightweightReactiveExample;
@@ -443,6 +467,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = THAWHMKJ4Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LightweightReactiveExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hidemunetakahashi.LightweightReactiveExample;
